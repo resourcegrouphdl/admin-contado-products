@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
+
 interface MenuItem {
   path: string;
   label: string;
@@ -18,9 +19,7 @@ export class MenuComponent {
 
  public menus: MenuItem[] = [
     { path: '/inicio', label: 'Inicio' },
-    { path: '/motos', label: 'Motos' },
-    { path: '/ventas', label: 'Ventas' },
-    { path: '/clientes', label: 'Clientes' }
+    { path: '/home/products', label: 'Motos' }
   ];
 
 constructor() { }
