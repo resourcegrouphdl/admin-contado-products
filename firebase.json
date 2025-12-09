@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/admin-motos-contado/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
