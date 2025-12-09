@@ -1,11 +1,6 @@
 import { Routes } from '@angular/router';
 
 
-export enum FEATURE_PAGES {
-  PRODUCTS = 'home',
-  AUTH = 'auth',
-}
-
 export const routes: Routes = [
   {
     path:'',
@@ -13,13 +8,13 @@ export const routes: Routes = [
       {
         path: '',
         pathMatch: 'full',
-        redirectTo: FEATURE_PAGES.AUTH,
+        redirectTo: 'auth',
       },
       {
-        path: FEATURE_PAGES.AUTH,
+        path: 'auth',
         loadChildren: () => import('./features/auth/auth.routes').then(m => m.AUTH_ROUTES),
       },{
-        path: FEATURE_PAGES.PRODUCTS,
+        path: 'home',
         loadChildren: () => import('./features/products/products.routes').then(m => m.PRODUCT_ROUTES),
       }
 
@@ -29,7 +24,7 @@ export const routes: Routes = [
 
   {
     path: "**" ,
-    redirectTo: FEATURE_PAGES.AUTH
+    redirectTo: 'auth'
   }
 
 

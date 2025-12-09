@@ -18,8 +18,10 @@ interface MenuItem {
 export class MenuComponent {
 
  public menus: MenuItem[] = [
-    { path: '/inicio', label: 'Inicio' },
-    { path: '/home/products', label: 'Motos' }
+    { path: '/home/products', label: 'inventario' },
+    { path: '/home/product', label: 'unitario' },
+    { path: '/home/productnew', label: 'crearproducto' },
+    { path: '/home/productupdate', label: 'actualizar' }
   ];
 
 constructor() { }
