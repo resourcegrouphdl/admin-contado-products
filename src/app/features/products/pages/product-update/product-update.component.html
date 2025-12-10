@@ -1,1 +1,96 @@
-<p>product-update works!</p>
+<main class="detalle-container">
+
+  <!-- FILTROS -->
+  <mat-card class="filtros">
+    <h3>Buscar moto</h3>
+
+    <form class="filtros-grid">
+
+      <mat-form-field appearance="outline">
+        <mat-label>Buscar por placa</mat-label>
+        <input matInput placeholder="ABC-123">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Marca</mat-label>
+        <mat-select>
+          <mat-option value="yamaha">Yamaha</mat-option>
+          <mat-option value="honda">Honda</mat-option>
+          <mat-option value="bajaj">Bajaj</mat-option>
+          <mat-option value="ktm">KTM</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary">
+        Buscar
+      </button>
+
+      <button mat-stroked-button color="warn">
+        Limpiar
+      </button>
+
+    </form>
+  </mat-card>
+
+  <!-- FORMULARIO DE EDICIÓN -->
+  <mat-card class="detalle-moto">
+    <h2>Editar Moto</h2>
+
+    <form class="form-grid">
+
+      <mat-form-field appearance="outline">
+        <mat-label>Placa</mat-label>
+        <input matInput placeholder="ABC-123">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Marca</mat-label>
+        <mat-select>
+          <mat-option value="yamaha">Yamaha</mat-option>
+          <mat-option value="honda">Honda</mat-option>
+          <mat-option value="bajaj">Bajaj</mat-option>
+          <mat-option value="ktm">KTM</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Modelo</mat-label>
+        <input matInput placeholder="R3">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Año</mat-label>
+        <input matInput type="number" placeholder="2023">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Precio</mat-label>
+        <input matInput type="number" placeholder="25900">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Color</mat-label>
+        <input matInput placeholder="Azul">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full">
+        <mat-label>Descripción</mat-label>
+        <textarea matInput rows="3"></textarea>
+      </mat-form-field>
+
+      <!-- Botones -->
+      <div class="acciones full">
+        <button mat-raised-button color="primary">
+          Guardar cambios
+        </button>
+
+        <button mat-stroked-button color="warn">
+          Cancelar
+        </button>
+      </div>
+
+    </form>
+  </mat-card>
+
+</main>
+

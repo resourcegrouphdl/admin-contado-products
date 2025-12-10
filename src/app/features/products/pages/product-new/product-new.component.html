@@ -1,1 +1,79 @@
-<p>product-new works!</p>
+<main class="crear-container">
+
+  <mat-card class="crear-moto">
+
+    <h2>Registrar nueva moto</h2>
+    <p class="subtitulo">Complete la información de la moto</p>
+
+    <form class="form-grid">
+
+      <!-- Placa -->
+      <mat-form-field appearance="outline">
+        <mat-label>Placa</mat-label>
+        <input matInput placeholder="ABC-123">
+      </mat-form-field>
+
+      <!-- Marca -->
+      <mat-form-field appearance="outline">
+        <mat-label>Marca</mat-label>
+        <mat-select>
+          <mat-option value="yamaha">Yamaha</mat-option>
+          <mat-option value="honda">Honda</mat-option>
+          <mat-option value="bajaj">Bajaj</mat-option>
+          <mat-option value="ktm">KTM</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <!-- Modelo -->
+      <mat-form-field appearance="outline">
+        <mat-label>Modelo</mat-label>
+        <input matInput placeholder="R3">
+      </mat-form-field>
+
+      <!-- Año -->
+      <mat-form-field appearance="outline">
+        <mat-label>Año</mat-label>
+        <input matInput type="number" placeholder="2024">
+      </mat-form-field>
+
+      <!-- Precio -->
+      <mat-form-field appearance="outline">
+        <mat-label>Precio</mat-label>
+        <input matInput type="number" placeholder="25900">
+      </mat-form-field>
+
+      <!-- Color -->
+      <mat-form-field appearance="outline">
+        <mat-label>Color</mat-label>
+        <input matInput placeholder="Negro / Azul">
+      </mat-form-field>
+
+      <!-- Imagen -->
+      <mat-form-field appearance="outline">
+        <mat-label>URL Imagen</mat-label>
+        <input matInput placeholder="https://...">
+      </mat-form-field>
+
+      <!-- Descripción -->
+      <mat-form-field appearance="outline" class="full">
+        <mat-label>Descripción</mat-label>
+        <textarea matInput rows="3"></textarea>
+      </mat-form-field>
+
+      <!-- Acciones -->
+      <div class="acciones full">
+        <button mat-raised-button color="primary">
+          Crear moto
+        </button>
+
+        <button mat-stroked-button color="warn">
+          Cancelar
+        </button>
+      </div>
+
+    </form>
+
+  </mat-card>
+
+</main>
+

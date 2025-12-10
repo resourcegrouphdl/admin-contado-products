@@ -1,15 +1,25 @@
-******
-<nav class="menu">
-  ---
-  <ul>
-    yyy
-    <li *ngFor="let menu of menus">
-      +++
-      <a [routerLink]="menu.path">
-        {{ menu.label }}
-      </a>
-      +++
-    </li>
-  </ul>
-</nav>
-*********
+<div class="layout">
+
+  <nav class="menu">
+    <div class="menu-toolbar">
+      <span class="menu-title"><img src="123.png" alt="Logo de la aplicación" style="width: 100%;" /></span>
+
+      <button class="menu-toggle" (click)="open = !open">☰</button>
+    </div>
+
+    <ul [class.open]="open">
+      <li *ngFor="let menu of menus">
+        <a [routerLink]="menu.path" routerLinkActive="active">
+          {{ menu.label }}
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="content">
+    <router-outlet></router-outlet>
+  </main>
+
+</div>
+
+

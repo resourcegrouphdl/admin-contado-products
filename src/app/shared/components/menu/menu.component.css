@@ -1,0 +1,103 @@
+/* ----- layout base ----- */
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ----- MENÚ ----- */
+.menu {
+  background: #ffffff;
+  box-shadow: 2px 0 6px rgba(0,0,0,.12);
+  width: 240px;
+  flex-shrink: 0;
+}
+
+/* toolbar */
+.menu-toolbar {
+  height: 64px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.menu-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #3f51b5;
+}
+
+/* oculta hamburguesa en desktop */
+.menu-toggle {
+  display: none;
+}
+
+/* menú vertical */
+.menu ul {
+  list-style: none;
+  margin:   0px ;
+  padding: 0px ;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu li {
+  padding: 10px 0px;
+
+}
+
+.menu li a {
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #424242;
+  font-weight: 500;
+  transition: background .2s;
+}
+
+.menu li a:hover {
+  background: rgba(63,81,181,.08);
+}
+
+.menu li a.active {
+  background: rgba(63,81,181,.15);
+  color: #3f51b5;
+}
+
+/* ----- CONTENIDO ----- */
+.content {
+  flex: 1;
+  padding: 24px;
+  background: #f5f5f5;
+}
+
+/* ========== MOBILE ========== */
+@media (max-width: 768px) {
+
+  .layout {
+    flex-direction: column;
+  }
+
+  .menu {
+    width: 100%;
+    box-shadow: 0 2px 6px rgba(0,0,0,.15);
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+    border: none;
+    background: none;
+    font-size: 26px;
+    cursor: pointer;
+  }
+
+  .menu ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease;
+  }
+
+  .menu ul.open {
+    max-height: 300px;
+  }
+}

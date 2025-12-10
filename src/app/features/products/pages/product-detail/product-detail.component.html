@@ -1,1 +1,81 @@
-<p>product-detail works!</p>
+<main class="detalle-container">
+
+  <!-- FILTROS -->
+  <mat-card class="filtros">
+    <h3>Filtros</h3>
+
+    <div class="filtros-grid">
+
+      <!-- Buscar por placa -->
+      <mat-form-field appearance="outline">
+        <mat-label>Buscar por placa</mat-label>
+        <input matInput placeholder="Ej: ABC-123">
+      </mat-form-field>
+
+      <!-- Buscar por marca -->
+      <mat-form-field appearance="outline">
+        <mat-label>Marca</mat-label>
+        <mat-select>
+          <mat-option value="yamaha">Yamaha</mat-option>
+          <mat-option value="honda">Honda</mat-option>
+          <mat-option value="bajaj">Bajaj</mat-option>
+          <mat-option value="ktm">KTM</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary">
+        Buscar
+      </button>
+
+      <button mat-stroked-button color="warn">
+        Limpiar
+      </button>
+
+    </div>
+  </mat-card>
+
+  <!-- DETALLE DE LA MOTO -->
+  <mat-card class="detalle-moto">
+
+    <div class="detalle-grid">
+
+      <!-- Imagen -->
+      <div class="imagen">
+        <img src="mtoo.jpg" alt="Moto">
+      </div>
+
+      <!-- Información -->
+      <div class="info">
+        <h2>Yamaha R3</h2>
+        <p class="placa">Placa: ABC-123</p>
+
+        <mat-divider></mat-divider>
+
+        <p><strong>Marca:</strong> Yamaha</p>
+        <p><strong>Modelo:</strong> R3</p>
+        <p><strong>Año:</strong> 2023</p>
+        <p><strong>Precio:</strong> S/ 25,900</p>
+
+        <mat-divider></mat-divider>
+
+        <p class="descripcion">
+          Moto deportiva ligera, excelente rendimiento en ciudad y carretera.
+        </p>
+
+        <div class="acciones">
+          <button mat-raised-button color="primary">
+            Comprar
+          </button>
+
+          <button mat-stroked-button color="accent">
+            WhatsApp
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </mat-card>
+
+</main>

@@ -1,0 +1,61 @@
+.detalle-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Filtros */
+.filtros h3 {
+  margin-bottom: 1rem;
+}
+
+.filtros-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  align-items: end;
+}
+
+/* Detalle moto */
+.detalle-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.imagen img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.info h2 {
+  margin-bottom: 0.5rem;
+}
+
+.placa {
+  color: gray;
+  margin-bottom: 1rem;
+}
+
+.descripcion {
+  margin-top: 1rem;
+  color: #444;
+}
+
+.acciones {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .detalle-grid {
+    grid-template-columns: 1fr;
+  }
+}
